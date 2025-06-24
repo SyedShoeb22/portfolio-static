@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Shoeb | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Syed Shoeb</h1>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-content">
+      <img src="assets/profile.jpg" alt="Profile" class="hero-img fade-in" />
+      <div class="fade-in delay-1">
+        <h2>AI-Powered Data Engineer & Developer</h2>
+        <p>Building scalable AI systems and cloud-native apps using Python, ML, and automation pipelines.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section fade-in delay-2">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I combine machine learning, distributed computing, and web development to deliver real-time, intelligent solutions — from AQI forecasting to document intelligence systems.</p>
+    </div>
+  </section>
+
+  <section id="skills" class="section bg-light fade-in delay-3">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="grid-3">
+        <div class="card slide-up delay-4">
+          <h3>Data Engineering</h3>
+          <ul>
+            <li>PySpark, Kafka</li>
+            <li>Data Lakes, NoSQL</li>
+            <li>RDS, PostgreSQL</li>
+          </ul>
+        </div>
+        <div class="card slide-up delay-5">
+          <h3>AI & ML</h3>
+          <ul>
+            <li>XGBoost, DL</li>
+            <li>Optuna, AutoML</li>
+            <li>Bayesian Uncertainty</li>
+          </ul>
+        </div>
+        <div class="card slide-up delay-6">
+          <h3>Web & Cloud</h3>
+          <ul>
+            <li>Django, Streamlit</li>
+            <li>Cloudflare Workers</li>
+            <li>PythonAnywhere</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section fade-in delay-4">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid-2">
+        <div class="project slide-up delay-5">
+          <h3>🧾 Invoice Extractor</h3>
+          <p>Extracts invoice numbers and totals from PDFs and exports to Excel using span-text and table-based logic.</p>
+        </div>
+        <div class="project slide-up delay-6">
+          <h3>🌫️ AQI Predictor</h3>
+          <p>Django app with regression models & Optuna tuning to forecast air quality index (AQI).</p>
+        </div>
+        <div class="project slide-up delay-7">
+          <h3>📱 Call Recorder Uploader</h3>
+          <p>ADB + Streamlit app to pull call logs, upload to Drive, and transcribe recordings.</p>
+        </div>
+        <div class="project slide-up delay-8">
+          <h3>📚 PDF QA RAG</h3>
+          <p>Google Colab RAG pipeline using free open-source LLMs for answering questions on PDFs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section bg-light fade-in delay-5">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+    </div>
+  </section>
+
+  <footer class="fade-in delay-6">
+    <div class="container">
+      <p>&copy; 2025 Syed Shoeb. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("hamburger").addEventListener("click", () => {
+      document.getElementById("navLinks").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+    "name": "portfolio-site",
+    "version": "1.0.0",
+    "description": "Syed Shoeb personal portfolio",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {},
+    "author": "Syed Shoeb",
+    "license": "MIT"
+  }
+  
